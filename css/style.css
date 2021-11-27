@@ -4,6 +4,7 @@
     --color-accent-red: #FB3B64;
     --color-accent-green: #55DFB4;
     --color-black: #000000;
+    --color-black-shadow: #00000029;
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
     --color-white: #FFFFFF;
@@ -11,4 +12,61 @@
 
 * {
     box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 70px;
+    background-color: var(--color-white);
+    box-shadow: var(--color-black-shadow) 0 3px 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.header-container {
+    width: 83vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+div.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: var(--color-primary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.navigation {
+    width: 33vw;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.nav-button {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    color: var(--color-grey);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button:hover {
+    color: var(--color-black);
+    border-bottom: 4px solid var(--color-primary);
 }
