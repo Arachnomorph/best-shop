@@ -1,2 +1,2 @@
 # best-shop
-Website created as an exercise of html and css
+Website created as an exercise in html and css
