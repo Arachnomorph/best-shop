@@ -14,6 +14,13 @@
     box-sizing: border-box;
 }
 
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+}
+
 /* header and navigation */
 
 header {
@@ -78,7 +85,7 @@ nav.navigation {
 
 section.opening {
     width: 100vw;
-    margin-top: 130px;
+    margin-bottom: 100px;
 
     display: flex;
     flex-direction: column;
@@ -105,7 +112,7 @@ p.call-to-action {
     font-family: 'Open sans', sans-serif;
     font-size: 16px;
     line-height: 22px;
-    margin-bottom: 60px;
+    margin-bottom: 38px;
 }
 
 .button-primary {
@@ -117,8 +124,134 @@ p.call-to-action {
     background-color: var(--color-primary);
     padding: 22px 157px;
     border-radius: 40px;
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
 }
 
 img.background-main {
     width: 100vw;
 }
+
+/* section stats */
+
+section.stats {
+    width: 100vw;
+    margin-bottom: 121px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.stats-container {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.stats {
+    margin-bottom: 100px;
+}
+
+div.stats-icon-container {
+    width: 50%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.stats-icon-column {
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-icon {
+    margin-bottom: 14px;
+}
+
+.stats-icon-background {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.stats-icon-image[alt*=person] {
+    position: absolute;
+    top: 5px;
+    left: 27px;
+}
+
+.stats-icon-image[alt*=eye] {
+    position: absolute;
+    top: 11px;
+    left: 17px;
+}
+
+.stats-icon-image[alt*=catalog] {
+    position: absolute;
+    top: 5px;
+    left: 26px;
+}
+
+.stats-icon-background-red {
+background-color: var(--color-accent-red);
+}
+
+.stats-icon-background-blue {
+    background-color: var(--color-primary);
+}
+
+.stats-icon-background-green {
+    background-color: var(--color-accent-green);
+}
+
+p.number {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 6px;
+    margin-bottom: 19px;
+}
+
+p.number-description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--color-grey);
+    text-align: center;
+}
+
+/* section benefits */
+
+section.benefits {
+    width: 100vw;
+    padding-top: 106px;
+    background-color: var(--color-light-grey);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits-container {
+    width: 70%;
+}
+
+.benefit-container-primary {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
