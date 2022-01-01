@@ -1,0 +1,22 @@
+h1 {
+  @include font ("Raleway", 49px, 57px, 400, $color-neutral-dark);
+  margin-bottom: 20px;
+}
+
+h2 {
+  @include font ("Raleway", 36px, 42px, 400, $color-neutral-dark);
+}
+
+h3 {
+  @include font ("Raleway", 21px, 1em, 700, $color-neutral-dark);
+  margin-bottom: 14px;
+}
+
+h4 {
+  @include font ("Raleway", 12px, 1em, 700, $color-neutral-dark);
+}
+
+ul {
+  @include font ("Open sans", 14px, 41px, 400, $color-neutral-dark);
+  text-align: center;
+}

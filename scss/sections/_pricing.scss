@@ -1,0 +1,127 @@
+section.pricing {
+  width: 100%;
+  margin-bottom: 180px;
+  display: flex;
+  justify-content: center;
+}
+
+h2.pricing {
+  margin-bottom: 50px;
+}
+
+p.price {
+  font-family: 'Open sans', sans-serif;
+  font-size: 46px;
+  font-weight: 300;
+  line-height: 64px;
+}
+
+.pricing-plan-basic p.price {
+  color: $color-accent-a;
+}
+
+.pricing-plan-professional p.price {
+  color: $color-primary;
+}
+
+.pricing-plan-premium p.price {
+  color: $color-accent-b;
+}
+
+div.pricing-container {
+  width: 78%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plans-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 59px;
+}
+
+.pricing-plan-container {
+  position: relative;
+  width: 30%;
+  padding: 34px 0 80px 0;
+  border: 1px solid;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.button-secondary {
+  content: "Begin";
+  font-size: 13px;
+  text-align: center;
+  padding: 16px 57px;
+  border-radius: 30px;
+  position: absolute;
+  bottom: -25px;
+}
+
+.pricing-plan-basic {
+  height: 92%;
+  border-color: $color-accent-a;
+}
+
+.pricing-plan-basic .button {
+  background-color: $color-accent-a;
+  box-shadow: none;
+}
+
+.pricing-plan-professional {
+  height: 100%;
+  width: 32%;
+  border-color: $color-primary;
+  box-shadow: 5px 10px 27px $color-primary-shadow;
+}
+
+.pricing-plan-professional .button {
+  background-color: $color-primary;
+  padding: 16px 64px;
+}
+
+.pricing-plan-premium {
+  height: 92%;
+  border-color: $color-accent-b;
+}
+
+.pricing-plan-premium .button {
+  background-color: $color-accent-b;
+  box-shadow: none;
+}
+
+.pricing ul {
+  margin-top: auto;
+}
+
+.pricing li {
+  margin-top: auto;
+  line-height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+li.included::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background-image: url("../assets/Ckechmark-1.svg");
+}
+
+li.not-included::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background-image: url("../assets/Close.svg");
+}

@@ -1,0 +1,44 @@
+header {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 130px;
+  background-color: $color-neutral-bright;
+  box-shadow: $color-neutral-dark-shadow 0 3px 6px;
+
+  @include flex-center;
+  align-items: stretch;
+}
+
+.header-container {
+  width: 83%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+div.logo {
+  @include font ("Raleway", 32px, 1em, 300, $color-primary);
+  @include flex-center;
+}
+
+nav.navigation {
+  width: 33%;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.nav-button {
+  @include font ("Open sans", 11px, 1em, 700, $color-grey);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 10px;
+
+  @include flex-center;
+  flex-shrink: 0;
+
+  &:hover {
+    color: $color-neutral-dark;
+    border-bottom: 4px solid $color-primary;
+  }
+}

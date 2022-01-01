@@ -1,0 +1,93 @@
+section.stats {
+  width: 100%;
+  margin-bottom: 121px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.stats-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2.stats {
+  margin-bottom: 100px;
+}
+
+div.stats-icon-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.stats-icon-column {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-icon {
+  margin-bottom: 14px;
+}
+
+.stats-icon-background {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.stats-icon-image[alt*=person] {
+  position: absolute;
+  top: 5px;
+  left: 27px;
+}
+
+.stats-icon-image[alt*=eye] {
+  position: absolute;
+  top: 11px;
+  left: 17px;
+}
+
+.stats-icon-image[alt*=catalog] {
+  position: absolute;
+  top: 5px;
+  left: 26px;
+}
+
+.stats-icon-background-red {
+  background-color: $color-accent-a;
+}
+
+.stats-icon-background-blue {
+  background-color: $color-primary;
+}
+
+.stats-icon-background-green {
+  background-color: $color-accent-b;
+}
+
+p.number {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 6px;
+  margin-bottom: 19px;
+}
+
+p.number-description {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  color: $color-grey;
+  text-align: center;
+}
